@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App del Clima</title>
+    <!-- Aquí iría tu CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="weather-container">
+        <h1>El Clima</h1>
+
+        <!-- Campo de texto y botón -->
+        <input type="text" id="inputCiudad" placeholder="Escribe una ciudad (ej. Bogotá)">
+        <button id="btnBuscar">Buscar</button>
+
+        <!-- Contenedor donde mostraremos el resultado -->
+        <div id="resultadoClima">
+            <p>Ingresa una ciudad para ver su clima.</p>
+        </div>
+    </div>
+
+    <!-- Es importante el orden: primero la API, luego la lógica principal -->
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

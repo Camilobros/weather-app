@@ -1,0 +1,102 @@
+/* Reseteo básico para asegurar que se vea igual en todos los navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+
+    /* Flexbox: Centra la tarjeta de la aplicación en toda la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.weather-container {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+    /* Flexbox: Organiza los elementos internos en una columna */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* Espacio exacto entre cada elemento */
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #1a202c;
+}
+
+input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+button {
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #3b82f6;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#resultadoClima {
+    margin-top: 10px;
+    padding: 20px 10px;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    border: 1px dashed #cbd5e1;
+
+    /* Flexbox: Centra el texto del resultado */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 120px;
+}
+
+#resultadoClima h2 {
+    font-size: 1.5rem;
+    color: #475569;
+    margin-bottom: 5px;
+}
+
+.temperatura {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #0f172a;
+    line-height: 1;
+    margin: 10px 0;
+}
